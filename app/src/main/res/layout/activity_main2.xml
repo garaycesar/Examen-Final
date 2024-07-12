@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_marginTop="100dp"
+        android:hint="Ingrese un primero numero"
+        android:layout_width="match_parent"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/num2"
+        android:hint="Ingrese un segundo numero numero"
+        android:layout_width="match_parent"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sumar"
+            android:text="+"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/restar"
+            android:text="-"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/multiplicar"
+            android:text="*"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/dividir"
+            android:text="/"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/modulo"
+            android:text="%"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/ciclo"
+        android:text="Ciclo de vida de un Activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="25"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
